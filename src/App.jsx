@@ -8,7 +8,7 @@ function App() {
     <Router>
       <div className="min-h-screen bg-gray-100">
         <Navbar />
-        <Routes>
+        <Routes basename={import.meta.env.BASE_URL}>
           <Route path="/" element={<Home />} />
           <Route path="/games" element={<Games />} />
         </Routes>
