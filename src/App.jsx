@@ -5,10 +5,10 @@ import Games from './pages/Games'
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="min-h-screen bg-gray-100">
         <Navbar />
-        <Routes basename={import.meta.env.BASE_URL}>
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/games" element={<Games />} />
         </Routes>
